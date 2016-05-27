@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": ["log"]
+      }
+    ],
+    "no-empty": "error",
+    "eqeqeq": "error",
+    "prefer-const": "error",
+    "no-const-assign": "error",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "no-multi-spaces": "error",
+    "no-unused-vars": 1
+  }
+}
